@@ -17,3 +17,7 @@ void LED::toggle() {
         _lastToggle = millis();
     }
 }
+
+void LED::fade() {
+
+}

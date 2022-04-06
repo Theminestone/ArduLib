@@ -19,6 +19,8 @@ public:
     void off();
 
     void toggle();
+
+    void fade();
 };
 
 
