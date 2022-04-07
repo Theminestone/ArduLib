@@ -3,7 +3,6 @@
 
 #include <Arduino.h>
 
-
 class LED {
 private:
     byte _pin;
@@ -12,7 +11,9 @@ private:
     unsigned long _lastToggle;
 
 public:
-    LED(int pin, unsigned long interval);
+    LED(int pin);
+
+    void setInterval(unsigned long interval);
 
     void on();
 
@@ -20,8 +21,10 @@ public:
 
     void toggle();
 
-    void fade();
-};
+    void set();
 
+    void fade();
+
+};
 
 #endif //ARDULIB_LED_H
