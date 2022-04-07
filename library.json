@@ -1,5 +1,10 @@
 {
   "name": "ArduLib",
   "version": "1.0",
-  "header": "led.h"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Theminestone/ArduLib.git"
+  },
+  "license": "MIT",
+  "headers": "led.h"
 }
