@@ -1,5 +1,5 @@
-#ifndef ARDULIB_LED_H
-#define ARDULIB_LED_H
+#ifndef ARDULIB_ARDULIB_H
+#define ARDULIB_ARDULIB_H
 
 #include <Arduino.h>
 
@@ -11,7 +11,9 @@ private:
     unsigned long _lastToggle;
 
 public:
-    LED(int pin);
+    LED(byte pin);
+
+    LED(byte pin, unsigned long interval);
 
     void setInterval(unsigned long interval);
 
@@ -27,4 +29,4 @@ public:
 
 };
 
-#endif //ARDULIB_LED_H
+#endif //ARDULIB_ARDULIB_H
