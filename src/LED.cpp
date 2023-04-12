@@ -1,5 +1,13 @@
 #include "ArduLib.h"
 
+LED::LED() {
+    _pin = LED_BUILTIN;
+    _status = false;
+    _interval = 0;
+    _lastToggle = 0;
+    pinMode(_pin, OUTPUT);
+}
+
 LED::LED(byte pin) {
     _pin = pin;
     _status = false;
